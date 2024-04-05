@@ -173,7 +173,7 @@ cython_debug/
 ### Python Patch ###
 # Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
 poetry.toml
-
+*/__pycache__
 # ruff
 .ruff_cache/
 
