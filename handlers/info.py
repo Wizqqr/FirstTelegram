@@ -1,7 +1,7 @@
 from aiogram import Router, types
 from aiogram.filters import Command
-
 info_router = Router()
+
 
 @info_router.message(Command('myinfo'))
 async def info(message: types.Message):

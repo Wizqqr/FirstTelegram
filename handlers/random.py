@@ -5,12 +5,15 @@ import os
 from random import choice
 from config import bot
 random_pic_router = Router()
+
+
 @random_pic_router.message(Command('photo'))
 async def photo(message: types.Message):
     chat_id = message.from_user.id
     path = 'images/1!!.jpg'
     file = FSInputFile(path)
     await bot.send_photo(chat_id=chat_id, photo=file, caption='GOAT')
+
 
 
 @random_pic_router.message(Command('random'))
